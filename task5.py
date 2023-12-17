@@ -1,15 +1,16 @@
-#x = input()
+x = input()
 s = ''
 w = int(input())
 step = int(input())
-with open('1full.fasta', mode='r') as f:
+with open(x, mode='r') as f:
     f.readline()
     for line in f:
         if line[0] == '>':
             break
         line = line.strip()
         s = s + line
-with open('GCScew_1_out.txt', mode='w') as f:
+out = 'out_GC-Scew' + x
+with open(out, mode='w') as f:
     cum_scew = 0
     for i in range(0, len(s), step):
         y = s[i:i+w]
