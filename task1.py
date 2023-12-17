@@ -1,4 +1,3 @@
-
 def g(x):
     d = {}
     out = x + '(task_1)'
@@ -21,6 +20,7 @@ def g(x):
 g('1.txt')
 g('2.txt')
 g('3.txt')
+
 
 
 
