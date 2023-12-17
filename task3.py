@@ -1,5 +1,5 @@
-d = {}
 def g(x):
+    d = {}
     out = '(task_3)' + x
     with open(x, mode='r') as f:
         for line in f:
